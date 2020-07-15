@@ -8,14 +8,6 @@ import Status from "./components/Status";
 
 import "./App.css";
 
-function formatTime(time) {
-  if (time < 10) {
-    return "0" + time;
-  } else {
-    return time;
-  }
-}
-
 function App() {
   const [minute, setMinute] = useState("");
   const [second, setSecond] = useState("");
@@ -25,11 +17,11 @@ function App() {
   const [speed, setSpeed] = useState("one");
 
   const handleChange = (e) => {
-    setMinute(formatTime(e.target.value));
+    setMinute(e.target.value);
     setTotalSeconds(e.target.value * 60);
     setCurrentSeconds(e.target.value * 60 + second);
     setTimerStart(false);
-    setSecond(formatTime(0));
+    setSecond(0);
   };
 
   useEffect(() => {
@@ -40,15 +32,16 @@ function App() {
     if (speed === "three") timeSpeed = 500;
 
     if (timerStart) {
-      if (minute > 0 && second === "00") {
+      console.log("minute:", minute);
+      console.log("second:", second);
+      if (minute > 0 && second === 0) {
         setSecond(59);
-        setMinute((minute) => formatTime(minute - 1));
+        setMinute((minute) => minute - 1);
       }
       const timer =
-        second > 0 &&
-        setInterval(() => setSecond(formatTime(second - 1)), timeSpeed);
+        second > 0 && setInterval(() => setSecond(second - 1), timeSpeed);
       setCurrentSeconds(minute * 60 + second);
-      if (currentSeconds === "000") {
+      if (currentSeconds === 0) {
         setTimerStart(false);
       }
       return () => clearInterval(timer);

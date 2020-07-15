@@ -9,11 +9,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 const Status = React.memo(({ currentSeconds, totalSeconds }) => {
   const classes = useStyles();
-
+  console.log("currentSeconds:", currentSeconds);
+  console.log("totalSeconds:", totalSeconds);
   return (
     <Typography className={classes.margin} variant="h5" gutterBottom>
       {currentSeconds < totalSeconds / 2
-        ? currentSeconds === "000"
+        ? currentSeconds === 0
           ? "Time’s up!"
           : "More than halfway there!"
         : ""}

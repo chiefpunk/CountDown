@@ -4,6 +4,14 @@ import { IconButton, Typography } from "@material-ui/core";
 import PauseCircleOutlineIcon from "@material-ui/icons/PauseCircleOutline";
 import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 
+function formatTime(time) {
+  if (time < 10) {
+    return "0" + time;
+  } else {
+    return time;
+  }
+}
+
 const useStyles = makeStyles((theme) => ({
   margin: {
     margin: theme.spacing(1),
@@ -36,7 +44,8 @@ const Countdown = React.memo(
           gutterBottom
         >
           <span>
-            {minute ? minute : "00"} : {second ? second : "00"}
+            {minute ? formatTime(minute) : "00"} :{" "}
+            {second ? formatTime(second) : "00"}
           </span>
         </Typography>
 
