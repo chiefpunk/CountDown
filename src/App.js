@@ -53,7 +53,7 @@ function App() {
       }
       return () => clearInterval(timer);
     }
-  }, [second, minute, timerStart, speed]);
+  }, [second, minute, timerStart, speed, currentSeconds]);
 
   return (
     <div className="App">
