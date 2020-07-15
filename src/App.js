@@ -74,8 +74,6 @@ function App() {
         second > 0 &&
         setInterval(() => setSecond(formatTime(second - 1)), timeSpeed);
       setCurrentSeconds(minute * 60 + second);
-      console.log(currentSeconds);
-
       if(currentSeconds === "001")
       {
         setTimerStart(false);
