@@ -4,13 +4,13 @@ Build a countdown timer SPA using React JS with controls to add time
 pause, and resume
 
 Requirements
- 
-1. The user should be able to enter a # of minutes (positive integer) and click a “Start” b utton to initialize the countdown. 
-1. Timer format: MM:SS 
-1. The user should be able to pause & resume the countdown using pause / resume b uttons. 
-1. While the countdown timer is active, the user should be able to speed up / slow down t he speed at the following rates: ○ 1.0X (normal speed, selected by default) ○ 1.5X ○ 2X 
-1. When half of the selected duration has been passed, display a string of text above the c ountdown timer reading: “More than halfway there!” ○ When the countdown timer reaches 0, this text should change to: “Time’s up!” 
-1. When the countdown is within 20 seconds of ending, the countdown timer text should t urn red. 
+
+1. The user should be able to enter a # of minutes (positive integer) and click a “Start” b utton to initialize the countdown.
+1. Timer format: MM:SS
+1. The user should be able to pause & resume the countdown using pause / resume b uttons.
+1. While the countdown timer is active, the user should be able to speed up / slow down t he speed at the following rates: ○ 1.0X (normal speed, selected by default) ○ 1.5X ○ 2X
+1. When half of the selected duration has been passed, display a string of text above the c ountdown timer reading: “More than halfway there!” ○ When the countdown timer reaches 0, this text should change to: “Time’s up!”
+1. When the countdown is within 20 seconds of ending, the countdown timer text should t urn red.
 1. At 10 seconds, the text should start blinking
 
 ### `npm start`
@@ -21,4 +21,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-![Screenshot](/screenshots/screenshot.png)
+![Screenshot](/screenshots/screenshot1.png)
