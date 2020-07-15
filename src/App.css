@@ -41,6 +41,7 @@
 .blink {
   color: red;
   animation: blink 1s linear infinite;
+  margin: 0px !important;
 }
 .timeText {
   margin: 0px !important;

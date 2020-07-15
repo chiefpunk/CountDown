@@ -29,7 +29,7 @@ function App() {
     setTotalSeconds(e.target.value * 60);
     setCurrentSeconds(e.target.value * 60 + second);
     setTimerStart(false);
-    setSecond(0);
+    setSecond(formatTime(0));
   };
 
   useEffect(() => {
@@ -40,7 +40,7 @@ function App() {
     if (speed === "three") timeSpeed = 500;
 
     if (timerStart) {
-      if (minute > 0 && second === 0) {
+      if (minute > 0 && second === "00") {
         setSecond(59);
         setMinute((minute) => formatTime(minute - 1));
       }
@@ -48,7 +48,7 @@ function App() {
         second > 0 &&
         setInterval(() => setSecond(formatTime(second - 1)), timeSpeed);
       setCurrentSeconds(minute * 60 + second);
-      if (currentSeconds === "001") {
+      if (currentSeconds === "000") {
         setTimerStart(false);
       }
       return () => clearInterval(timer);
