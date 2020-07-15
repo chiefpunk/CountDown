@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/05f12e4a-6d9b-4244-8e78-940701839e8f/deploy-status)](https://app.netlify.com/sites/friendly-torvalds-cfebf3/deploys)
+
 # Countdown timer Reactjs SPA Application
 
 Build a countdown timer SPA using React JS with controls to add time, speed up / slow down t he countdown,
