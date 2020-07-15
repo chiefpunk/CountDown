@@ -32,8 +32,6 @@ function App() {
     if (speed === "three") timeSpeed = 500;
 
     if (timerStart) {
-      console.log("minute:", minute);
-      console.log("second:", second);
       if (minute > 0 && second === 0) {
         setSecond(59);
         setMinute((minute) => minute - 1);
