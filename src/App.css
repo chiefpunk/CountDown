@@ -42,12 +42,13 @@
   color: red;
   animation: blink 1s linear infinite;
 }
-/* span {
-  font-size: 25px;
-  font-family: cursive;
-  color: white;
-  animation: blink 1s linear infinite;
-} */
+.timeText {
+  margin: 0px !important;
+}
+.buttonIcon {
+  font-size: 3.1875rem !important;
+}
+
 @keyframes blink {
   0% {
     opacity: 0;
