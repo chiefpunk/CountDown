@@ -12,9 +12,9 @@ Requirements
 1. The user can pause & resume the countdown using pause / resume b uttons.
 1. While the countdown timer is active, the user can speed up / slow down t he speed at the following rates:
 
-- 1.0X (normal speed, selected by default)
-- 1.5X
-- 2X
+   - 1.0X (normal speed, selected by default)
+   - 1.5X
+   - 2X
 
 1. When half of the selected duration has been passed, display a string of text above the c ountdown timer reading: “More than halfway there!”
 1. When the countdown timer reaches 0, this text should change to: “Time’s up!”
