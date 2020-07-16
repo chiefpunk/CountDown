@@ -18,8 +18,8 @@ Requirements
 
 1. When half of the selected duration has been passed, display a string of text above the c ountdown timer reading: “More than halfway there!”
 1. When the countdown timer reaches 0, this text should change to: “Time’s up!”
-1. When the countdown is within 20 seconds of ending, the countdown timer text should t urn red.
-1. At 10 seconds, the text should start blinking
+1. When the countdown is within 20 seconds of ending, the countdown timer text turn red.
+1. At 10 seconds, the text start blinking
 
 ### `npm start`
 
